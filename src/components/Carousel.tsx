@@ -25,7 +25,7 @@ const CarouselHome = () => {
           Features
         </p>
         <p className="text-sm max-md:text-center text-gray-800 mb-6">
-          Explore the features of True Feedback
+          Explore the features of Truth Link
         </p>
 
         <Carousel

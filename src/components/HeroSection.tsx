@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import HeroGifgreen from "../assets/Feedback-hero-green.svg";
 import HeroGifpurple from "../assets/Feedback-hero-purple.svg";
 import Image from "next/image";
@@ -7,7 +7,12 @@ import { useSession } from "next-auth/react";
 import { User } from "next-auth";
 import Link from "next/link";
 import { Button } from "./ui/button";
-
+const phrases = [
+  "TruthLink: Speak Freely",
+  "TruthLink: Sincere Feedback",
+  "TruthLink: Speak Freely",
+  "TruthLink: Your Voice",
+];
 const HeroSection = () => {
   const { data: session } = useSession();
   const user: User = session?.user as User;
@@ -23,9 +28,11 @@ const HeroSection = () => {
                 welcome to
               </p>
             ) : null}
-            <h1 className="text-5xl font-bold mt-4">
-              TruthLink, Real Feedback
-            </h1>
+            <div className="typewriter">
+              <h1 className="text-5xl font-bold mt-4">
+                TruthLink, Real Feedback
+              </h1>
+            </div>
             <h1 className="text-lg max-sm:text-wrap max-sm:m-2 ">
               Honest and Anonymous Communication, Simplified
             </h1>
@@ -67,9 +74,9 @@ const HeroSection = () => {
                 </p>
                 <p className="max-w-[900px] text-s font-light text-sm m-3">
                   Empower yourself with candid feedback and genuine messages.
-                  With True Feedback, generate a unique link, share it with
-                  anyone, and receive honest, anonymous responses without
-                  revealing your identity.
+                  With Truth Link, generate a unique link, share it with anyone,
+                  and receive honest, anonymous responses without revealing your
+                  identity.
                 </p>
               </div>
               <div>
