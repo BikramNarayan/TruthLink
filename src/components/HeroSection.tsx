@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import HeroGifgreen from "../assets/Feedback-hero-green.svg";
 import HeroGifpurple from "../assets/Feedback-hero-purple.svg";
 import Image from "next/image";
+import Typewriter from "typewriter-effect";
 import { useSession } from "next-auth/react";
 import { User } from "next-auth";
 import Link from "next/link";
@@ -28,11 +29,21 @@ const HeroSection = () => {
                 welcome to
               </p>
             ) : null}
-            <div className="typewriter">
-              <h1 className="text-5xl font-bold mt-4">
-                TruthLink, Real Feedback
-              </h1>
-            </div>
+            <h1 className="text-5xl font-bold mt-4 ">
+              TruthLink,
+              <Typewriter
+                options={{
+                  strings: [
+                    " Real Feedback",
+                    "Sincere Feedback",
+                    "Speak Freely",
+                    "Your Voice",
+                  ],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />{" "}
+            </h1>
             <h1 className="text-lg max-sm:text-wrap max-sm:m-2 ">
               Honest and Anonymous Communication, Simplified
             </h1>
