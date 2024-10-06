@@ -1,4 +1,4 @@
-// File: C:\Users\bikra\Downloads\anonymous-review-app-main\anonymous-review-app\anonymous-review-app-main\src\app\(app)\page.tsx
+// File: C:\Users\bikra\Desktop\TruthLink\src\app\(app)\page.tsx
 import * as entry from '../../../../src/app/(app)/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

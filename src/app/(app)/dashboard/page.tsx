@@ -28,7 +28,9 @@ const Dashboard = () => {
   const router = useRouter();
 
   const handleMessageDelete = (messageId: string) => {
-    setMessages(messages.filter((message) => message._id == !messageId));
+    setMessages((prevMessages) =>
+      prevMessages.filter((message) => message._id !== messageId)
+    );
   };
 
   const { data: session } = useSession();

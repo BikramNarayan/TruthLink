@@ -1,5 +1,10 @@
 {
+  "/(auth)/sign-in/page": "app/(auth)/sign-in/page.js",
+  "/api/get-messages/route": "app/api/get-messages/route.js",
+  "/api/accept-message/route": "app/api/accept-message/route.js",
+  "/api/delete-message/[messageid]/route": "app/api/delete-message/[messageid]/route.js",
   "/api/auth/[...nextauth]/route": "app/api/auth/[...nextauth]/route.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/(app)/dashboard/page": "app/(app)/dashboard/page.js",
   "/(app)/page": "app/(app)/page.js"
 }
